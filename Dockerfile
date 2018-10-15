@@ -1,4 +1,4 @@
-FROM 50.50.65.240:5000/dyna-test/logstash:6.4.2
+FROM docker.elastic.co/logstash/logstash:6.4.2
 RUN chmod -R 777 /usr/share/logstash/data
 RUN rm -f /usr/share/logstash/pipeline/logstash.conf
 USER root
